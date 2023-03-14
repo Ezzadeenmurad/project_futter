@@ -21,40 +21,53 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(title: const Center(child: Text("Home Screen")), actions: [
         
       ]),
-      body:Container(
-          margin:EdgeInsets.only(left: 40) ,
-          child:Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-                 children: [
-                  Row(
-                    children: [
-                      ElevatedButton(
-                        onPressed:(){
-                          Navigator.push(context,
-                                         MaterialPageRoute(
-                                          builder: (context) => const Widgets()
-                                          )
-                          );
-                        },
-                         child:Text("Widgets 5"),
-                         ),
+      body:
+      // Container(
+      //     margin:EdgeInsets.only(left: 40) ,
+      //     child:Column(
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //            children: [
+      //             Row(
+      //               children: [
+      //                 ElevatedButton(
+      //                   onPressed:(){
+      //                     Navigator.push(context,
+      //                                    MaterialPageRoute(
+      //                                     builder: (context) => const Widgets()
+      //                                     )
+      //                     );
+      //                   },
+      //                    child:Text("Widgets 5"),
+      //                    ),
 
-                      ElevatedButton(
-                        style: ButtonStyle( ),
-                        onPressed:(){
-                          Navigator.push(context,
-                                         MaterialPageRoute(
-                                          builder: (context) => const Widgets()
-                                          )
-                          );
-                        },
-                         child:Text("Avast Security"),
-                         ),   
-                    ],
-                  ),
-                 ],
-          ), 
-        ),
+      //                 ElevatedButton(
+      //                   style: ButtonStyle( ),
+      //                   onPressed:(){
+      //                     Navigator.push(context,
+      //                                    MaterialPageRoute(
+      //                                     builder: (context) => const Widgets()
+      //                                     )
+      //                     );
+      //                   },
+      //                    child:Text("Avast Security"),
+      //                    ),   
+      //               ],
+      //             ),
+      //            ],
+      //     ), 
+      //   ),
+      
+      Container(
+  width: 100,
+  height: 100,
+  decoration: BoxDecoration(
+    shape: BoxShape.circle,
+    border: Border.all(
+      color: Colors.black,
+      width: 2,
+    ),
+  ),
+)
     );
   }
 }
